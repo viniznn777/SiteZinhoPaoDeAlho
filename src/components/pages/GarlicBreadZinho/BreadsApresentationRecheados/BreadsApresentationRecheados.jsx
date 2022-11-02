@@ -63,7 +63,7 @@ const BreadsApresentationRecheados = () => {
             className="col-lg-6  container-paes"
             id="container-img-paes-catupiry"
           >
-            <Link to="bolinha-recheado-catupiry" draggable="false">
+            <Link to="/pao-bolinha-recheado-catupiry" draggable="false">
               <figure>
                 <img
                   src={RecheadoCatupiry}
@@ -80,7 +80,7 @@ const BreadsApresentationRecheados = () => {
             className="col-lg-6 container-paes"
             id="container-img-paes-linguica"
           >
-            <Link to="bolinha-rechado-linguica" draggable="false">
+            <Link to="/pao-bolinha-recheado-linguica" draggable="false">
               <figure>
                 <img
                   src={RecheadoLinguica}

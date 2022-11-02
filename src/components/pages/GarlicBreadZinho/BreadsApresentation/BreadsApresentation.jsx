@@ -62,7 +62,7 @@ const BreadsApresentation = () => {
             className="col-lg-3  container-paes"
             id="container-img-paes-tradicional"
           >
-            <Link to="baguete-tradicional" draggable="false">
+            <Link to="/pao-baguete-tradicional" draggable="false">
               <figure>
                 <img
                   src={Tradicional}
@@ -79,7 +79,7 @@ const BreadsApresentation = () => {
             className="col-lg-3 container-paes"
             id="container-img-paes-baguete-picante"
           >
-            <Link to="baguete-picante" draggable="false">
+            <Link to="/pao-baguete-picante" draggable="false">
               <figure>
                 <img
                   src={Picante}
@@ -94,7 +94,7 @@ const BreadsApresentation = () => {
             className="col-lg-3 container-paes"
             id="container-img-paes-bolinha"
           >
-            <Link to="bolinha-tradicional" draggable="false">
+            <Link to="/pao-bolinha-tradicional" draggable="false">
               <figure>
                 <img
                   src={Bolinha}
@@ -109,7 +109,7 @@ const BreadsApresentation = () => {
           </div>
           <div className="col-lg-3 container-paes">
             <Link
-              to="bolinha-picante"
+              to="/pao-bolinha-picante"
               id="container-img-paes-bolinha-picante"
               draggable="false"
             >

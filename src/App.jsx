@@ -9,6 +9,12 @@ import ContactUs from "./components/pages/ContactUs/ContactUs";
 import WorkInZinho from "./components/pages/WorkInZinho/WorkinZinho";
 import BreadsApresentation from "./components/pages/GarlicBreadZinho/BreadsApresentation/BreadsApresentation";
 import BreadsApresentationRecheados from "./components/pages/GarlicBreadZinho/BreadsApresentationRecheados/BreadsApresentationRecheados";
+import BagueteTradicional from "./components/pages/GarlicBreadZinho/Paes/BagueteTradicional/BagueteTradicional";
+import BaguetePicante from "./components/pages/GarlicBreadZinho/Paes/BaguetePicante/BaguetePicante";
+import BolinhaTradicional from "./components/pages/GarlicBreadZinho/Paes/BolinhaTradicional/BolinhaTradicional";
+import BolinhaPicante from "./components/pages/GarlicBreadZinho/Paes/BolinhaPicante/BolinhaPicante";
+import BolinhaRecheadoCatupiry from "./components/pages/GarlicBreadZinho/Paes/BolinhaRecheadoCatupiry/BolinhaRecheadoCatupiry";
+import BolinhaRecheadoLinguica from "./components/pages/GarlicBreadZinho/Paes/BolinhaRecheadoLinguica/BolinhaRecheadoLinguica";
 
 function App() {
   return (
@@ -24,6 +30,33 @@ function App() {
             path="pao-de-alho-zinho"
             element={<BreadsApresentation />}
           ></Route>
+          {/* Rota de Pães */}
+          <Route
+            path="pao-baguete-tradicional"
+            element={<BagueteTradicional />}
+          ></Route>
+          <Route
+            path="pao-baguete-picante"
+            element={<BaguetePicante />}
+          ></Route>
+          <Route
+            path="pao-bolinha-tradicional"
+            element={<BolinhaTradicional />}
+          ></Route>
+          <Route
+            path="pao-bolinha-picante"
+            element={<BolinhaPicante />}
+          ></Route>
+          <Route
+            path="pao-bolinha-recheado-catupiry"
+            element={<BolinhaRecheadoCatupiry />}
+          ></Route>
+          <Route
+            path="pao-bolinha-recheado-linguica"
+            element={<BolinhaRecheadoLinguica />}
+          ></Route>
+
+          {/* Fim da Rota de Pães */}
           <Route
             path="pao-de-alho-zinho-rechado"
             element={<BreadsApresentationRecheados />}
