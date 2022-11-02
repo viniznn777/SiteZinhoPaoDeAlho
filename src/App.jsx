@@ -8,6 +8,7 @@ import AboutZinho from "./components/pages/About/About";
 import ContactUs from "./components/pages/ContactUs/ContactUs";
 import WorkInZinho from "./components/pages/WorkInZinho/WorkinZinho";
 import BreadsApresentation from "./components/pages/GarlicBreadZinho/BreadsApresentation/BreadsApresentation";
+import BreadsApresentationRecheados from "./components/pages/GarlicBreadZinho/BreadsApresentationRecheados/BreadsApresentationRecheados";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route
             path="pao-de-alho-zinho"
             element={<BreadsApresentation />}
+          ></Route>
+          <Route
+            path="pao-de-alho-zinho-rechado"
+            element={<BreadsApresentationRecheados />}
           ></Route>
         </Routes>
         <Footer />

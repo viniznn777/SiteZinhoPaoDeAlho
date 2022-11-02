@@ -66,7 +66,9 @@ const NavBar = () => {
                   <Link to="/pao-de-alho-zinho">PÃO DE ALHO ZINHO</Link>
                 </li>
                 <li>
-                  <Link to="/">PÃO RECHEADO ZINHO</Link>
+                  <Link to="/pao-de-alho-zinho-rechado">
+                    PÃO RECHEADO ZINHO
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">PACK</Link>
@@ -136,7 +138,7 @@ const NavBar = () => {
                 <Link to="/pao-de-alho-zinho" className="link">
                   PÃO DE ALHO ZINHO
                 </Link>
-                <Link to="/" className="link">
+                <Link to="/pao-de-alho-zinho-rechado" className="link">
                   PÃO RECHEADO ZINHO
                 </Link>
                 <Link to="/" className="link">
