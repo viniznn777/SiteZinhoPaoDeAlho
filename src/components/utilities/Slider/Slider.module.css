@@ -22,3 +22,8 @@
     height: 50vh;
   }
 }
+@media screen and (max-width: 390px) {
+  .section {
+    height: 36vh;
+  }
+}
