@@ -28,16 +28,16 @@ const Slider = () => {
         className={styles.swiper_wrapper}
       >
         <SwiperSlide className={styles.Slider}>
-          <img src={IMG1} alt="" draggable="false" />
+          <img src={IMG1} alt="" draggable="false" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide className={styles.Slider}>
-          <img src={IMG2} alt="" draggable="false" />
+          <img src={IMG2} alt="" draggable="false" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide className={styles.Slider}>
-          <img src={IMG3} alt="" draggable="false" />
+          <img src={IMG3} alt="" draggable="false" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide className={styles.Slider}>
-          <img src={IMG4} alt="" draggable="false" />
+          <img src={IMG4} alt="" draggable="false" className="img-fluid" />
         </SwiperSlide>
       </Swiper>
     </section>

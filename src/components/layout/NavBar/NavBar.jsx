@@ -57,13 +57,13 @@ const NavBar = () => {
             </ul>
           </li>
           <li id="activeDropdownProducts">
-            <Link to="/" draggable="false">
+            <Link to="/pao-de-alho-zinho" draggable="false">
               PRODUTOS
             </Link>
             <ul className="dropdown">
               <div>
                 <li>
-                  <Link to="/">PÃO DE ALHO ZINHO</Link>
+                  <Link to="/pao-de-alho-zinho">PÃO DE ALHO ZINHO</Link>
                 </li>
                 <li>
                   <Link to="/">PÃO RECHEADO ZINHO</Link>
@@ -96,6 +96,11 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
+
+      {/* =================================== */}
+      {/* Início da Barra de Navegação Mobile */}
+      {/* =================================== */}
+
       <button id="OpenMenuMobile" onClick={() => OpenMenuMobile()}>
         <GiHamburgerMenu />
       </button>
@@ -127,10 +132,8 @@ const NavBar = () => {
             <li id="activeDropdownProducts">
               <details>
                 <summary>PRODUTOS</summary>
-                <Link to="/" draggable="false">
-                  PRODUTOS ZINHO
-                </Link>
-                <Link to="/" className="link">
+
+                <Link to="/pao-de-alho-zinho" className="link">
                   PÃO DE ALHO ZINHO
                 </Link>
                 <Link to="/" className="link">

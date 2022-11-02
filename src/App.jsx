@@ -7,6 +7,7 @@ import Socials from "./components/utilities/SocialsFixed/Socials";
 import AboutZinho from "./components/pages/About/About";
 import ContactUs from "./components/pages/ContactUs/ContactUs";
 import WorkInZinho from "./components/pages/WorkInZinho/WorkinZinho";
+import BreadsApresentation from "./components/pages/GarlicBreadZinho/BreadsApresentation/BreadsApresentation";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
           <Route path="/empresa" element={<AboutZinho />}></Route>
           <Route path="/contato" element={<ContactUs />}></Route>
           <Route path="trabalhe-conosco" element={<WorkInZinho />}></Route>
+          <Route
+            path="pao-de-alho-zinho"
+            element={<BreadsApresentation />}
+          ></Route>
         </Routes>
         <Footer />
         <Socials />
