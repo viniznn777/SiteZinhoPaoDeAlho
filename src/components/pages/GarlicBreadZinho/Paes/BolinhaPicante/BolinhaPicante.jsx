@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ContainerBolinhaPicante from "./Styles";
 import PageBreadComponent from "../../componentPageBread/PageBreadComponent";
@@ -8,8 +8,13 @@ import bannerBolinhaPicante from "../../../../../Imgs/paes/banner-bolinha-picant
 import Picante from "../../../../../Imgs/paes/picante.png";
 import Bolinha from "../../../../../Imgs/paes/bolinha.png";
 import Tradicional from "../../../../../Imgs/paes/tradicional.png";
+import { ScrollToTop } from "../../../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const BolinhaPicante = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerBolinhaPicante>
       <PageBreadComponent

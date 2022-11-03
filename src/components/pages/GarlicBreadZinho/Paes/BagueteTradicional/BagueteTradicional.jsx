@@ -9,8 +9,14 @@ import bannerBagueteTradicional from "../../../../../Imgs/paes/banner-baguete-tr
 import Picante from "../../../../../Imgs/paes/picante.png";
 import Bolinha from "../../../../../Imgs/paes/bolinha.png";
 import BolinhaPicante from "../../../../../Imgs/paes/bolinhaPicante.png";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const BagueteTradicional = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <Container>
       <PageBreadComponent

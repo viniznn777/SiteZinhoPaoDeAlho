@@ -5,8 +5,14 @@ import ContainerHome from "./styles";
 
 import colectionPaoDeAlhoZinho from "../../../Imgs/colectionPaoDeAlho.jpg";
 import bannerPertoDeVoce from "../../../Imgs/banner-perto-de-voce.jpg";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const Home = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerHome>
       <Slider />

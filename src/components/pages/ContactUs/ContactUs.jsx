@@ -1,7 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 import ContainerContact from "./Styles";
 
 const ContactUs = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerContact className="container-fluid">
       <section className="container-fluid bg-yellow-zinho reset border-radius-bottom-right">

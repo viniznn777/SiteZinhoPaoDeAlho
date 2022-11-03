@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { ScrollToTop } from "../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 import FormularioWorkInZinho from "./Formulário/FormWorkInZinho";
 import ContainerWorkInZinho from "./Style";
 
 const WorkInZinho = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerWorkInZinho className="container-fluid form">
       <section className="container-fluid bg-yellow-zinho border-radius-bottom-right">
@@ -19,7 +24,8 @@ const WorkInZinho = () => {
               iguais. Se você acredita que está preparado (a) para fazer parte
               de uma das empresas nacionais que mais cresceram nos últimos anos,
               esta é a hora. Sempre procuramos por profissionais capacitados,
-              dinâmicos e dispostos a novos desafios. Preencha osrofissional, o
+              dinâmicos e dispostos a novos desafios. Preencha os campos abaixo
+              corretamente. Havendo uma vaga para o seu perfil profissional, o
               setor responsável entrará em contato. Boa sorte!
             </p>
           </div>

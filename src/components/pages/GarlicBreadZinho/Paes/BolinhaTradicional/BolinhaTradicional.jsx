@@ -8,8 +8,14 @@ import BolinhaPicante from "../../../../../Imgs/paes/bolinhaPicante.png";
 import bannerBolinhaTradicional from "../../../../../Imgs/paes/banner-bolinha-tradicional.jpg";
 import BaguetePicante from "../../../../../Imgs/paes/picante.png";
 import Tradicional from "../../../../../Imgs/paes/tradicional.png";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const BolinhaTradicional = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerBolinhaTradicional>
       <PageBreadComponent

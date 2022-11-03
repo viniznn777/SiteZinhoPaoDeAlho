@@ -22,7 +22,7 @@
     height: 50vh;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 470px) {
   .section {
     height: 36vh;
   }

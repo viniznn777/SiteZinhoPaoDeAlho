@@ -6,8 +6,14 @@ import PaoLinguicaQueijo from "../../../../../Imgs/paes/pao-recheado-linguica-1.
 import tableBolinhaLinguicaQueijo from "../../../../../Imgs/paes/tableBolinhaLinguicaQueijo.png";
 import bannerBolinhaLinguicaQueijo from "../../../../../Imgs/paes/banner-bolinha-linguica-queijo.jpg";
 import RecheadoCatupiry from "../../../../../Imgs/paes/bolinhaRequeijao.png";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const BolinhaRecheadoLinguica = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerBolinhaRecheadoLinguica>
       <PageBreadComponent

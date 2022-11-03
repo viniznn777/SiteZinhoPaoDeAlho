@@ -6,8 +6,14 @@ import IconVisao from "../../../Imgs/icon-visao.png";
 import IconValores from "../../../Imgs/icon-valores.png";
 import Logo from "../../../Imgs/logo.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const AboutZinho = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerAbout className="container-fluid ">
       <div className="container-fluid bg-zinho ">

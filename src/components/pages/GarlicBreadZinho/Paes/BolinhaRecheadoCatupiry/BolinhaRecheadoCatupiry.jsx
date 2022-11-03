@@ -6,8 +6,14 @@ import tableBolinhaCatupiry from "../../../../../Imgs/paes/tableBolinhaCatupiry.
 import bannerBolinhaCatupiry from "../../../../../Imgs/paes/banner-bolinha-catupiry.jpg";
 import RecheadoLinguica from "../../../../../Imgs/paes/bolinhaLinguica.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const BolinhaRecheadoCatupiry = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerBolinhaRecheadoCatupiry>
       <PageBreadComponent

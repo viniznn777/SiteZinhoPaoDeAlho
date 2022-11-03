@@ -7,9 +7,15 @@ import Collection from "../../../../Imgs/paes/collection-recheado.jpg";
 import RecheadoCatupiry from "../../../../Imgs/paes/bolinhaRequeijao.png";
 import RecheadoLinguica from "../../../../Imgs/paes/bolinhaLinguica.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 // ======== //
 
 const BreadsApresentationRecheados = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerBreadsApresentationRecheados>
       <section className="container-fluid bg-zinho paddingTopBottom">
