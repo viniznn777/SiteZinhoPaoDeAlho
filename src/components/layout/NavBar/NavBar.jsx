@@ -66,12 +66,12 @@ const NavBar = () => {
                   <Link to="/pao-de-alho-zinho">PÃO DE ALHO ZINHO</Link>
                 </li>
                 <li>
-                  <Link to="/pao-de-alho-zinho-rechado">
+                  <Link to="/pao-de-alho-zinho-recheado">
                     PÃO RECHEADO ZINHO
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">PACK</Link>
+                  <Link to="/pack-bolinha">PACK</Link>
                 </li>
               </div>
             </ul>
@@ -138,10 +138,10 @@ const NavBar = () => {
                 <Link to="/pao-de-alho-zinho" className="link">
                   PÃO DE ALHO ZINHO
                 </Link>
-                <Link to="/pao-de-alho-zinho-rechado" className="link">
+                <Link to="/pao-de-alho-zinho-recheado" className="link">
                   PÃO RECHEADO ZINHO
                 </Link>
-                <Link to="/" className="link">
+                <Link to="/pack-bolinha" className="link">
                   PACK
                 </Link>
               </details>

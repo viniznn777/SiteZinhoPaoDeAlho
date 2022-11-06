@@ -15,6 +15,7 @@ import BolinhaTradicional from "./components/pages/GarlicBreadZinho/Paes/Bolinha
 import BolinhaPicante from "./components/pages/GarlicBreadZinho/Paes/BolinhaPicante/BolinhaPicante";
 import BolinhaRecheadoCatupiry from "./components/pages/GarlicBreadZinho/Paes/BolinhaRecheadoCatupiry/BolinhaRecheadoCatupiry";
 import BolinhaRecheadoLinguica from "./components/pages/GarlicBreadZinho/Paes/BolinhaRecheadoLinguica/BolinhaRecheadoLinguica";
+import PackBolinha from "./components/pages/GarlicBreadZinho/Paes/PackBolinha/PackBolinha";
 
 function App() {
   return (
@@ -55,10 +56,11 @@ function App() {
             path="pao-bolinha-recheado-linguica"
             element={<BolinhaRecheadoLinguica />}
           ></Route>
+          <Route path="pack-bolinha" element={<PackBolinha />}></Route>
 
           {/* Fim da Rota de Pães */}
           <Route
-            path="pao-de-alho-zinho-rechado"
+            path="pao-de-alho-zinho-recheado"
             element={<BreadsApresentationRecheados />}
           ></Route>
         </Routes>
