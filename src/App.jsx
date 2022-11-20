@@ -16,6 +16,13 @@ import BolinhaPicante from "./components/pages/GarlicBreadZinho/Paes/BolinhaPica
 import BolinhaRecheadoCatupiry from "./components/pages/GarlicBreadZinho/Paes/BolinhaRecheadoCatupiry/BolinhaRecheadoCatupiry";
 import BolinhaRecheadoLinguica from "./components/pages/GarlicBreadZinho/Paes/BolinhaRecheadoLinguica/BolinhaRecheadoLinguica";
 import PackBolinha from "./components/pages/GarlicBreadZinho/Paes/PackBolinha/PackBolinha";
+import HomePreparation from "./components/pages/Preparation/HomePreparation/HomePreparation";
+import Churrasqueira from "./components/pages/Preparation/ItensDePreparo/Churrasqueira/Churrasqueira";
+import ChurrasqueiraEletrica from "./components/pages/Preparation/ItensDePreparo/ChurrasqueiraEletrica/ChurrasqueiraEletrica";
+import Frigideira from "./components/pages/Preparation/ItensDePreparo/Frigideira/Frigideira";
+import Grill from "./components/pages/Preparation/ItensDePreparo/Grill/Grill";
+import Forno from "./components/pages/Preparation/ItensDePreparo/Forno/Forno";
+import AirFryer from "./components/pages/Preparation/ItensDePreparo/AirFryer/AirFryer";
 
 function App() {
   return (
@@ -57,12 +64,25 @@ function App() {
             element={<BolinhaRecheadoLinguica />}
           ></Route>
           <Route path="pack-bolinha" element={<PackBolinha />}></Route>
-
           {/* Fim da Rota de Pães */}
+
           <Route
             path="pao-de-alho-zinho-recheado"
             element={<BreadsApresentationRecheados />}
           ></Route>
+          <Route path="preparo" element={<HomePreparation />}></Route>
+
+          {/* Início de Itens do modo de Preparo */}
+          <Route path="churrasqueira" element={<Churrasqueira />}></Route>
+          <Route
+            path="churrasqueira_eletrica"
+            element={<ChurrasqueiraEletrica />}
+          ></Route>
+          <Route path="frigideira" element={<Frigideira />}></Route>
+          <Route path="grill" element={<Grill />}></Route>
+          <Route path="forno" element={<Forno />}></Route>
+          <Route path="air_fryer" element={<AirFryer />}></Route>
+          {/* Fim dos itens do mode de Preparo */}
         </Routes>
         <Footer />
         <Socials />

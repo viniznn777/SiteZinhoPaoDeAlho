@@ -77,7 +77,7 @@ const NavBar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/" draggable="false">
+            <Link to="/preparo" draggable="false">
               PREPARO
             </Link>
           </li>
@@ -147,7 +147,7 @@ const NavBar = () => {
               </details>
             </li>
             <li>
-              <Link to="/" draggable="false" className="link">
+              <Link to="/preparo" draggable="false" className="link">
                 PREPARO
               </Link>
             </li>
