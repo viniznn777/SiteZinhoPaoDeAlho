@@ -104,6 +104,7 @@ const Header = styled.header`
     align-items: center;
     justify-content: center;
     animation-duration: 0.6s;
+    overflow-y: scroll;
   }
   .menu-mobile nav ul {
     display: flex;
