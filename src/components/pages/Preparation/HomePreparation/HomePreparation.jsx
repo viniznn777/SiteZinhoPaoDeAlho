@@ -38,41 +38,63 @@ const HomePreparation = () => {
         <div className="container">
           <div className="row CenterItem">
             <div className="col-lg-2 CenterItem">
-              <Link to="/churrasqueira">
+              <Link to="/churrasqueira" draggable="false">
                 <img
                   src={ChurrasqueiraIcon}
                   alt="Churrasqueira"
                   className="img-fluid"
+                  draggable="false"
                 />
               </Link>
             </div>
             <div className="col-lg-2 CenterItem">
-              <Link to="/churrasqueira_eletrica">
+              <Link to="/churrasqueira_eletrica" draggable="false">
                 <img
                   src={ChurrasqueiraEletrica}
                   alt="Churrasqueira Eletrica"
                   className="img-fluid"
+                  draggable="false"
                 />
               </Link>
             </div>
             <div className="col-lg-2 CenterItem">
-              <Link to="/frigideira">
-                <img src={Frigideira} alt="Frigideira" className="img-fluid" />
+              <Link to="/frigideira" draggable="false">
+                <img
+                  src={Frigideira}
+                  alt="Frigideira"
+                  className="img-fluid"
+                  draggable="false"
+                />
               </Link>
             </div>
             <div className="col-lg-2 CenterItem">
-              <Link to="/grill">
-                <img src={Grill} alt="Grill" className="img-fluid" />
+              <Link to="/grill" draggable="false">
+                <img
+                  src={Grill}
+                  alt="Grill"
+                  className="img-fluid"
+                  draggable="false"
+                />
               </Link>
             </div>
             <div className="col-lg-2 CenterItem">
-              <Link to="/forno">
-                <img src={Forno} alt="Forno" className="img-fluid" />
+              <Link to="/forno" draggable="false">
+                <img
+                  src={Forno}
+                  alt="Forno"
+                  className="img-fluid"
+                  draggable="false"
+                />
               </Link>
             </div>
             <div className="col-lg-2 CenterItem">
-              <Link to="/air_fryer">
-                <img src={AirFryer} alt="Air Fryer" className="img-fluid" />
+              <Link to="/air_fryer" draggable="false">
+                <img
+                  src={AirFryer}
+                  alt="Air Fryer"
+                  className="img-fluid"
+                  draggable="false"
+                />
               </Link>
             </div>
           </div>
