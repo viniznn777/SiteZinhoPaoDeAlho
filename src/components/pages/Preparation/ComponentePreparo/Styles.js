@@ -57,7 +57,7 @@ const ContainerComponentePreparo = styled.div`
   .bgTable {
     background-image: url(${bgTable});
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
     border-radius: 10px;

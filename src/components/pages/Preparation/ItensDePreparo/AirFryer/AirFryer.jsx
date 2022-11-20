@@ -21,7 +21,7 @@ const AirFryer = () => {
       desc3=".SEU PÃO DE ALHO ESTÁ PRONTO!"
       srcIframe="https://www.youtube.com/embed/3toysglC_yQ"
       titleIframe="[#FaçaDoSeuJeito] Zinho Original - Modo de Preparo - AIR FRYER"
-      title="FORNO"
+      title="AIR FRYER"
     />
   );
 };
