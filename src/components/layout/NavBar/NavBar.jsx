@@ -82,12 +82,12 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" draggable="false">
+            <Link to="/exportacao" draggable="false">
               EXPORTAÇÃO
             </Link>
           </li>
           <li>
-            <Link to="/" draggable="false">
+            <Link to="/onde_encontrar" draggable="false">
               ONDE ENCONTRAR
             </Link>
           </li>
@@ -152,12 +152,12 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" draggable="false" className="link">
+              <Link to="/exportacao" draggable="false" className="link">
                 EXPORTAÇÃO
               </Link>
             </li>
             <li>
-              <Link to="/" draggable="false" className="link">
+              <Link to="/onde_encontrar" draggable="false" className="link">
                 ONDE ENCONTRAR
               </Link>
             </li>

@@ -23,6 +23,8 @@ import Frigideira from "./components/pages/Preparation/ItensDePreparo/Frigideira
 import Grill from "./components/pages/Preparation/ItensDePreparo/Grill/Grill";
 import Forno from "./components/pages/Preparation/ItensDePreparo/Forno/Forno";
 import AirFryer from "./components/pages/Preparation/ItensDePreparo/AirFryer/AirFryer";
+import Exportation from "./components/pages/Exportation/Exportation";
+import WhereToFind from "./components/pages/WhereToFind/WhereToFind";
 
 function App() {
   return (
@@ -83,6 +85,8 @@ function App() {
           <Route path="forno" element={<Forno />}></Route>
           <Route path="air_fryer" element={<AirFryer />}></Route>
           {/* Fim dos itens do mode de Preparo */}
+          <Route path="exportacao" element={<Exportation />}></Route>
+          <Route path="onde_encontrar" element={<WhereToFind />}></Route>
         </Routes>
         <Footer />
         <Socials />
