@@ -1,9 +1,29 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ScrollToTop } from "../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 import ContainerContact from "./Styles";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const Warning = (string) =>
+    toast.warning(string, {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+
   useEffect(() => {
     document.onload = ScrollToTop();
   }, []);
@@ -11,6 +31,7 @@ const ContactUs = () => {
   return (
     <ContainerContact className="container-fluid">
       <section className="container-fluid bg-yellow-zinho reset border-radius-bottom-right">
+        <ToastContainer />
         <div className="container paddingTopBottom ">
           <div className="title">
             <p className="fs-3 whiteTextColor title">Fale com a ZINHO</p>
@@ -30,8 +51,13 @@ const ContactUs = () => {
             <label htmlFor="assunto" className="fs-4">
               Assunto <span>*</span>
             </label>
-            <select name="assunto" id="assunto" required>
-              <option>ESCOLHA UM ASSUNTO</option>
+            <select
+              name="assunto"
+              id="assunto"
+              required
+              onChange={(e) => setSubject(e.target.value)}
+            >
+              <option value="">ESCOLHA UM ASSUNTO</option>
               <option value="CONTATO COMERCIAL">CONTATO COMERCIAL</option>
               <option value="ASSESSORIA DE IMPRENSA">
                 ASSESSORIA DE IMPRENSA
@@ -51,9 +77,10 @@ const ContactUs = () => {
               type="text"
               name="name"
               id="name"
-              required
               placeholder="Digite seu Nome"
               title="Campo Obrigatório. Por favor digite seu primeiro nome, ou nome completo"
+              className="inputValidation"
+              onChange={(e) => setName(e.target.value)}
             />
             <label htmlFor="email" className="fs-4">
               E-mail <span>*</span>
@@ -62,9 +89,10 @@ const ContactUs = () => {
               type="email"
               name="email"
               id="email"
-              required
               placeholder="Digite seu e-mail"
               title="Campo Obrigatório. Por favor digite seu e-mail"
+              className="inputValidation"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor="telefone" className="fs-4">
               Telefone <span>*</span>
@@ -73,9 +101,10 @@ const ContactUs = () => {
               type="tel"
               name="telefone"
               id="telefone"
-              required
               placeholder="Digite seu telefone"
               title="Campo Obrigatório. Por favor digite seu número de telefone"
+              className="inputValidation"
+              onChange={(e) => setTelephone(e.target.value)}
             />
             <label htmlFor="textarea" className="fs-4">
               Escreva sua mensagem:
@@ -86,11 +115,14 @@ const ContactUs = () => {
               cols="30"
               rows="10"
               placeholder="Uma breve mensagem"
-              required
               title="Digite uma mensagem"
             ></textarea>
             <div className="containerButton">
-              <input type="submit" value="Enviar" />
+              <input
+                type="submit"
+                value="Enviar"
+                onClick={(e) => Validate(e)}
+              />
             </div>
           </form>
           <p className="fs-5 redTextColor">
@@ -100,6 +132,15 @@ const ContactUs = () => {
       </section>
     </ContainerContact>
   );
+
+  function Validate(e) {
+    if (!name || !email || !telephone) {
+      e.preventDefault();
+      Warning("Alguns campos Obrigatórios não estão preenchidos!");
+    } else if (!subject) {
+      Warning("Escolha um Assunto a ser tratado!");
+    }
+  }
 };
 
 export default ContactUs;
