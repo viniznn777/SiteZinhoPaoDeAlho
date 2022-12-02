@@ -5,9 +5,6 @@ const ContainerExportation = styled.div`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   .paddingTopBottom {
     padding-top: 3em;
@@ -53,21 +50,11 @@ const ContainerExportation = styled.div`
     flex-direction: column;
     gap: 1rem;
   }
-
-  .textAnimate {
-    animation: ColorText 0.5s infinite;
+  .border-radius-bottom-right {
+    border-bottom-right-radius: 25px;
   }
-
-  @keyframes ColorText {
-    0% {
-      color: #e21921;
-    }
-    50% {
-      color: rgba(88, 0, 149, 0.8);
-    }
-    100% {
-      color: rgba(4, 2, 26, 0.8);
-    }
+  .border-radius-top-right {
+    border-top-right-radius: 25px;
   }
 `;
 export default ContainerExportation;
