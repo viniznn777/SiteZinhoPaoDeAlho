@@ -1,7 +1,13 @@
 import React from "react";
 import ContainerWhereToFind from "./Styles";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../utilities/ScrollToTopFuction/ScrollToTopFunction";
 
 const WhereToFind = () => {
+  useEffect(() => {
+    document.onload = ScrollToTop();
+  }, []);
+
   return (
     <ContainerWhereToFind className="container-fluid ">
       <section className="container-fluid  bg-zinho-red border-radius-bottom-right">
