@@ -31,7 +31,7 @@ const Home = () => {
               Venha conhecer nossa variedade de produtos, todos de alta
               qualidade e muito saborosos. 😋
             </p>
-            <Link to="/" draggable="false">
+            <Link to="/pao-de-alho-zinho" draggable="false">
               <button>Produtos</button>
             </Link>
           </div>
@@ -48,7 +48,7 @@ const Home = () => {
               Está com vontade de provar um pão de alho Zinho? Sempre tem Zinho
               perto de você. 📌
             </p>
-            <Link to="/" draggable="false">
+            <Link to="/onde_encontrar" draggable="false">
               <button>Localização</button>
             </Link>
           </div>
