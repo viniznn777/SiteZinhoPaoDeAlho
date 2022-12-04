@@ -53,7 +53,7 @@ const PageBreadComponent = ({
                 <p className="fs-6 allergic redColorZinho title">{allergic}</p>
               </div>
               <div className="containerButton">
-                <Link draggable="false">
+                <Link draggable="false" to="/preparo">
                   <button>VEJA COMO É FACINHO DE FAZER!</button>
                 </Link>
               </div>

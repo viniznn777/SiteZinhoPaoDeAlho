@@ -98,7 +98,7 @@ const PackBolinha = () => {
               <figure>
                 <img
                   src={BolinhaTradicional}
-                  alt="Pão de Alho Bolinha Picante"
+                  alt="Pão de Alho Bolinha Tradicional"
                   draggable="false"
                 />
                 <figcaption className="textCenter">
@@ -116,7 +116,7 @@ const PackBolinha = () => {
               <figure>
                 <img
                   src={BolinhaRecheadoCatupiry}
-                  alt="Pão de Alho Bolinha Picante"
+                  alt="Pão de Alho Bolinha Recheado Catupiry"
                   draggable="false"
                 />
                 <figcaption className="textCenter">
@@ -134,7 +134,7 @@ const PackBolinha = () => {
               <figure>
                 <img
                   src={BolinhaLinguica}
-                  alt="Pão de Alho Bolinha Picante"
+                  alt="Pão de Alho Bolinha Recheado Linguiça e Queijo"
                   draggable="false"
                 />
                 <figcaption className="textCenter">

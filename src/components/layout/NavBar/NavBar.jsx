@@ -92,9 +92,14 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" draggable="false">
+            <a
+              href="https://canal.ouvidordigital.com.br/zinhoalimentos"
+              target="_blank"
+              rel="noopener noreferrer"
+              draggable="false"
+            >
               CANAL DE DENÚNCIAS
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -162,9 +167,14 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" draggable="false" className="link">
+              <a
+                href="https://canal.ouvidordigital.com.br/zinhoalimentos"
+                target="_blank"
+                rel="noopener noreferrer"
+                draggable="false"
+              >
                 CANAL DE DENÚNCIAS
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
